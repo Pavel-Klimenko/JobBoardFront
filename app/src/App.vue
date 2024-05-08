@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Hello World, meet Buddy!"/>
-    <br />    <br />    <br />
+    <HelloWorld msg="Hello World, meet Buddy!" />
+    <br /><br /><br />
 
-    <HelloWorld1 msg1="Hello World, meet Buddy!44444"/>
+<!--    <HelloWorld1 msg1="Hello World, meet Buddy!44444"/>-->
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import HelloWorld1 from './components/HelloWorld1.vue'
+//import HelloWorld1 from './components/HelloWorld1.vue'
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    HelloWorld1
+    //HelloWorld1
   }
 }
 </script>

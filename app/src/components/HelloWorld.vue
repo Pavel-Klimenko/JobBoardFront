@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+
+
+    <button v-on:click="showAlertPopup('Oath of Gippocrat')">Show alert popup!</button>
     <p>
-      For more info on how Buddy can help you launch killer apps,<br>
+      For more info on how Buddy can help you launch killer apps, {{test}}<br>
       check out the
       <a href="http://buddy.works" target="_blank" rel="noopener">Buddy homepage</a>.
     </p>
@@ -35,7 +38,18 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  data() {
+    return {
+      test: 'TEST_DATA'
+    }
+  },
+
+  methods: {
+    showAlertPopup(str) {
+      alert(str);
+    },
+  },
 }
 </script>
 
